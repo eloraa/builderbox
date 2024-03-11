@@ -5,7 +5,7 @@ import { fetchHtml } from './index';
 const Page = () => {
   useLayoutEffect(() => {
     fetchHtml();
-  });
+  }, []);
   return <div id="gjs"></div>;
 };
 
